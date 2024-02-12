@@ -2,13 +2,13 @@ print("Bienvenido a tu calculadora de IMC")
 apellidos = input ("Introduce tus apellidos\n")
 nombre = input("Ahora tu nombre\n")
 print ("Muchas gracias " + nombre)
-float(input("¿Que edad tienes? "))
+float(input("¿Que edad tienes?: "))
 cond = False
 while cond == False:
     try:
         edad = input("¿Que edad tienes?: ")
         if edad is not None:
-            edad = float(edad)
+            edad = int(edad)
             cond = True
         else:
             print("Ingresa un dato no nulo")
@@ -34,5 +34,5 @@ else:
 estatura = float(estatura)
 
 imc = peso / estatura**2
-print(f"{nombre} hemos determinado que tu IMC es {imc}")
+print(f"{nombre} {apellidos} hemos determinado que a tus {edad} años, tu IMC es de {imc}")
 
